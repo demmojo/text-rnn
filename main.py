@@ -22,4 +22,4 @@ else:
                       vocab_filepath='/vocabulary/Test_vocab.json',
                       config_filepath='config/Test_config.json')
 
-    train('harry.txt', textgen, train_new_model=train_new_model, num_epochs=1)
+    train('shakespeare.txt', textgen, train_new_model=train_new_model, num_epochs=1)
