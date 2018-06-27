@@ -5,13 +5,13 @@ train_new_model = True
 
 if train_new_model:
     textgen = CharGen(name="Shakespeare")
-    train(text_filepath='shakespeare.txt',
+    train(text_filepath='datasets/shakespeare.txt',
           textgen=textgen,
           num_epochs=25,
           bidirectional=True,
           rnn_size=128,
           rnn_layers=3,
-          batch_size=1024,
+          batch_size=2048,
           embedding_dims=150,
           train_new_model=train_new_model)
 

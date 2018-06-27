@@ -107,11 +107,11 @@ class CharGen:
 
         :return: None
         """
-        with open('{}_vocabulary.json'.format(self.config['name']),
+        with open('vocabulary/{}_vocabulary.json'.format(self.config['name']),
                   'w', encoding='utf8') as outfile:
             print(self.tokenizer.word_index)
             json.dump(self.tokenizer.word_index, outfile, ensure_ascii=False)
 
-        with open('{}_config.json'.format(self.config['name']),
+        with open('config/{}_config.json'.format(self.config['name']),
                   'w', encoding='utf8') as outfile:
             json.dump(self.config, outfile, ensure_ascii=False)
