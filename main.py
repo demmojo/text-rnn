@@ -9,10 +9,10 @@ if train_new_model:
           textgen=textgen,
           num_epochs=25,
           bidirectional=True,
-          rnn_size=1,
-          rnn_layers=1,
-          batch_size=1024,
-          embedding_dims=75,
+          rnn_size=128,
+          rnn_layers=3,
+          batch_size=2048,
+          embedding_dims=150,
           train_new_model=train_new_model)
 
     print(textgen.model.summary())
