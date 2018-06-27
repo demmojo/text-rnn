@@ -5,7 +5,7 @@ train_new_model = True
 
 if train_new_model:
     textgen = CharGen(name="Shakespeare")
-    train(text_filepath='datasets/shakespeare.txt',
+    train(text_filepath='shakespeare.txt',
           textgen=textgen,
           num_epochs=25,
           bidirectional=True,
