@@ -3,7 +3,7 @@ from keras.layers import Embedding, Dense, LSTM, Bidirectional
 from keras.engine.input_layer import Input
 from keras.layers import concatenate, SpatialDropout1D
 from keras.models import Model
-from .WeightedAttentionAverage import WeightedAttentionAverage
+from .AttentionLayer import WeightedAttentionAverage
 
 
 def chargen_model(num_of_classes, cfg, weights_filepath=None, dropout=0.05, optimizer=RMSprop(lr=4e-3, rho=0.99)):

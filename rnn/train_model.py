@@ -30,6 +30,7 @@ def train(text_filepath, textgen, num_epochs=50, gen_epochs=1, batch_size=1024, 
     :param kwargs:
     :return: None
     """
+
     with open(text_filepath, 'r', encoding='utf8', errors='ignore') as f:
         texts = [f.read()]
 

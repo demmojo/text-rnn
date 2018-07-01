@@ -69,4 +69,4 @@ class save_model_weights(Callback):
         if model_input_size(self.model) > 1:
             self.model = Model(inputs=self.model.input[0],
                                outputs=self.model.output[1])
-        self.model.save_weights("{}_weights.hdf5".format(self.weights_name))
+        self.model.save_weights("models/{}_weights.hdf5".format(self.weights_name))
