@@ -4,4 +4,4 @@ text-rnn allows you to create modern neural network architectures which use mode
 
 You can configure whether to use bidirectional RNNs, the number of RNN layers, RNN size, input length, and size of the embedding layer. 
 
-If you would like to train using a free GPU check out this [Colaboratory notebook](https://colab.research.google.com/github/demmojo/colabrnn/blob/master/colabrnn.ipynb).
+If you would like to train using a free GPU check out this [Colaboratory notebook](https://colab.research.google.com/github/demmojo/colabrnn/blob/master/colabRNN.ipynb).
